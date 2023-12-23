@@ -1,0 +1,698 @@
+#main {
+  width: 100%;
+  display: flex;
+  font-family: "Castoro", serif;
+  cursor: default;
+}
+#main #quotation > p {
+  font-size: 4vw;
+  color: white;
+  font-family: "Charm", cursive;
+}
+@media screen and (max-width: 576px) {
+  #main #quotation > p {
+    font-size: 5vw;
+  }
+}
+#main #quotation > span {
+  font-size: 1vw;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  #main #quotation > span {
+    font-size: 2vw;
+  }
+}
+#main > .aside_trick {
+  min-height: 100vh;
+}
+#main > .aside_trick > div {
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+#main > .aside_trick > div > .box_trick {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  font-family: "Victor Mono", monospace;
+  overflow: hidden;
+}
+#main > .aside_trick > div > .box_trick > P {
+  height: 0%;
+  width: 30%;
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  font-size: 15px;
+  writing-mode: vertical-lr;
+  letter-spacing: 4px;
+  color: #198754;
+  overflow: hidden;
+  animation: typewriter 5s steps(100) infinite, opacity_p 5s ease-in infinite;
+}
+@media screen and (max-width: 768px) {
+  #main > .aside_trick > div > .box_trick > P {
+    font-size: 10px;
+  }
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(2) {
+  animation-delay: 1s;
+  left: 0px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(3) {
+  animation-delay: 0.2s;
+  left: 15px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(4) {
+  animation-delay: 2.5s;
+  left: 30px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(5) {
+  animation-delay: 0.4s;
+  left: 45px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(6) {
+  animation-delay: 1.8s;
+  left: 60px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(7) {
+  animation-delay: 4.2s;
+  left: 75px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(8) {
+  animation-delay: 0.6s;
+  left: 90px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(9) {
+  animation-delay: 2.9s;
+  left: 105px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(10) {
+  animation-delay: 0.2s;
+  left: 120px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(11) {
+  animation-delay: 4s;
+  left: 135px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(12) {
+  animation-delay: 3s;
+  left: 150px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(13) {
+  animation-delay: 0.7s;
+  left: 165px;
+}
+#main > .aside_trick > div > .box_trick > P:nth-of-type(14) {
+  animation-delay: 2s;
+  left: 180px;
+}
+@keyframes typewriter {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes opacity_p {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+#main > .main_part {
+  background-color: black;
+}
+#main > .main_part h2 {
+  font-size: 35px;
+  color: #198754;
+}
+#main > .main_part > .head_top {
+  height: 100vh;
+}
+@media screen and (max-width: 576px) {
+  #main > .main_part > .head_top {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 577px) {
+  #main > .main_part > .head_top {
+    height: 60vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  #main > .main_part > .head_top {
+    height: 100vh;
+  }
+}
+#main > .main_part > .head_top > .row > .box_me {
+  position: relative;
+  overflow: hidden;
+  background-color: #232323;
+}
+@media screen and (max-width: 768px) {
+  #main > .main_part > .head_top > .row > .box_me {
+    height: 85%;
+    transform: translateX(-8%) translateY(8%);
+  }
+}
+@media screen and (min-width: 769px) {
+  #main > .main_part > .head_top > .row > .box_me {
+    height: 70%;
+    transform: translateX(-10%) translateY(20%);
+  }
+}
+@media screen and (min-width: 992px) {
+  #main > .main_part > .head_top > .row > .box_me {
+    height: 80%;
+    transform: translateX(-10%) translateY(12%);
+  }
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > .menu_icon {
+  z-index: 199 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > .menu_icon > i {
+  font-size: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .header > .menu_icon > i {
+    font-size: 15px;
+  }
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > div {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  transition: all ease 0.4s;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > div > ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 60px;
+  background-color: rgba(35, 35, 35, 0.5137254902);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > div > ul > li {
+  width: 100%;
+  height: 20%;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > div > ul > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  overflow: hidden;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > div > ul > li > a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .header > div > ul > li > a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .header {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .header {
+    height: 60px;
+  }
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > figure {
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .header > figure > img {
+  width: 60%;
+  height: 80%;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .introduction_me {
+  color: white;
+  height: 40%;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .introduction_me > h1 {
+  font-size: 5vw;
+}
+@media screen and (max-width: 576px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .introduction_me > h1 {
+    font-size: 4vw;
+  }
+}
+#main > .main_part > .head_top > .row > .box_me > div > .introduction_me > h4 {
+  font-size: 2vw;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .box_icon {
+  height: 10%;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .box_icon > a {
+  text-decoration: none;
+  color: black;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .box_icon > a > i {
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  transition: 0.4s;
+}
+@media screen and (max-width: 576px) {
+  #main > .main_part > .head_top > .row > .box_me > div > .box_icon > a > i {
+    font-size: 3vw;
+  }
+}
+#main > .main_part > .head_top > .row > .box_me > div > .box_icon > a > i:hover {
+  transform: scale(1.4);
+  color: #198754;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .copyright {
+  height: 30%;
+  display: flex;
+  align-content: end;
+}
+#main > .main_part > .head_top > .row > .box_me > div > .copyright > span {
+  font-size: 1vw;
+}
+#main > .main_part > .head_top > .row > .box_me > div:nth-of-type(2) {
+  transform: perspective(800px) translateX(80%) translateZ(-800px);
+  background-image: url(../image/me/half-face2.webp);
+  filter: blur(4px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 10% 0;
+}
+#main > .main_part > .head_top > .row > .box_me > div:nth-of-type(3) {
+  transform: perspective(800px) translateX(20%) translateZ(-530px);
+  background-image: url(../image/me/half-face2.webp);
+  filter: blur(3px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 10% 0;
+}
+#main > .main_part > .head_top > .row > .box_me > div:nth-of-type(4) {
+  transform: perspective(800px) translateX(-7%) translateZ(-320px);
+  background-image: url(../image/me/half-face2.webp);
+  filter: blur(2px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 10% 0;
+}
+#main > .main_part > .head_top > .row > .box_me > div:nth-of-type(5) {
+  transform: perspective(800px) translateX(-11%) translateZ(-150px);
+  background-image: url(../image/me/half-face2.webp);
+  filter: blur(1px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 10% 0;
+}
+#main > .main_part > .head_top > .row > .box_me > div:nth-of-type(6) {
+  background-image: url(../image/me/half-face1.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#main > .main_part > .about_me > .biography > div:nth-of-type(1) {
+  display: flex;
+  align-content: center;
+}
+#main > .main_part > .about_me > .biography > div:nth-of-type(1) > h2 {
+  font-size: 18px;
+  width: auto;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  #main > .main_part > .about_me > .biography > div:nth-of-type(1) > h2 {
+    font-size: 30px;
+  }
+}
+#main > .main_part > .about_me > .biography > div:nth-of-type(1) > div > span {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #main > .main_part > .about_me > .biography > div:nth-of-type(1) > div > span {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #main > .main_part > .about_me > .biography > div:nth-of-type(1) > div > span {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #main > .main_part > .about_me > .biography > div:nth-of-type(1) > div > span {
+    font-size: 20px;
+  }
+}
+#main > .main_part > .about_me > .biography > div:nth-of-type(2) > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main > .main_part > .about_me > .biography > div:nth-of-type(2) > figure > img {
+  width: auto;
+  height: 400px;
+  border-radius: 50px;
+}
+#main > .main_part > .skill > div > .show_skill {
+  background-color: rgba(0, 255, 255, 0);
+}
+#main > .main_part > .skill > div > .show_skill > div {
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+#main > .main_part > .skill > div > .show_skill > div > span {
+  font-size: 17px;
+  color: white;
+}
+#main > .main_part > .skill > div > .show_skill > div > .animation_skill {
+  width: 100%;
+  height: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.74);
+  border-radius: 5px;
+  position: relative;
+  transition: 0.4s;
+  overflow: hidden;
+}
+#main > .main_part > .skill > div > .show_skill > div > .animation_skill::before {
+  content: "";
+  background-color: #09b363;
+  display: flex;
+  width: 70%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(1):hover .animation_skill::before {
+  animation: 1s skill1 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(1) > .animation_skill::before {
+  content: "";
+  width: 100%;
+}
+@keyframes skill1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(2):hover .animation_skill::before {
+  animation: 1s skill2 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(2) > .animation_skill::before {
+  content: "";
+  width: 90%;
+}
+@keyframes skill2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(3):hover .animation_skill::before {
+  animation: 1s skill3 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(3) > .animation_skill::before {
+  content: "";
+  width: 90%;
+}
+@keyframes skill3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(4):hover .animation_skill::before {
+  animation: 1s skill4 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(4) > .animation_skill::before {
+  content: "";
+  width: 100%;
+}
+@keyframes skill4 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(5):hover .animation_skill::before {
+  animation: 1s skill5 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(5) > .animation_skill::before {
+  content: "";
+  width: 90%;
+}
+@keyframes skill5 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 90%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(6):hover .animation_skill::before {
+  animation: 1s skill6 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(6) > .animation_skill::before {
+  content: "";
+  width: 95%;
+}
+@keyframes skill6 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 95%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(7):hover .animation_skill::before {
+  animation: 1s skill7 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(7) > .animation_skill::before {
+  content: "";
+  width: 80%;
+}
+@keyframes skill7 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(8):hover .animation_skill::before {
+  animation: 1s skill8 1 forwards linear;
+}
+#main > .main_part > .skill > div > .show_skill > div:nth-of-type(8) > .animation_skill::before {
+  content: "";
+  width: 60%;
+}
+@keyframes skill8 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60%;
+  }
+}
+#main > .main_part > .portfolio .my_portfolio > div {
+  height: 150px;
+  position: relative;
+}
+#main > .main_part > .portfolio .my_portfolio > div::before {
+  content: "";
+  display: flex;
+  width: 0%;
+  height: 148px;
+  background-color: rgba(255, 255, 255, 0.9843137255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#main > .main_part > .portfolio .my_portfolio > div:hover:before {
+  width: 100%;
+}
+#main > .main_part > .portfolio .my_portfolio > div:hover > div span {
+  color: black;
+}
+#main > .main_part > .portfolio .my_portfolio > div:hover .img-portfolio > figure::after {
+  background-color: rgba(35, 35, 35, 0);
+  transition-delay: 0.3s;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .caption span {
+  z-index: 2;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+@media screen and (max-width: 576px) {
+  #main > .main_part > .portfolio .my_portfolio > div > .caption span {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 577px) {
+  #main > .main_part > .portfolio .my_portfolio > div > .caption span {
+    font-size: 17px;
+  }
+}
+#main > .main_part > .portfolio .my_portfolio > div > .caption > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure {
+  height: 100%;
+  position: relative;
+  transition: 0.4s;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.5568627451);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure:hover > figcaption {
+  background-color: rgba(255, 255, 255, 0);
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure:hover {
+  transform: perspective(800px) scale(1.2) translateX(-20%);
+  z-index: 2;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure:hover > figcaption > a > i {
+  display: flex;
+  transform: perspective(800px);
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure > img {
+  width: 100%;
+  height: 100%;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure > figcaption {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure > figcaption > a {
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure > figcaption > a > i {
+  color: #198754;
+  display: none;
+  font-size: 40px;
+}
+#main > .main_part > .portfolio .my_portfolio > div > .img-portfolio > figure > figcaption > a > i:hover {
+  color: white;
+}
+#main > .main_part .footer .contact .icon > i {
+  color: #198754;
+}
+#main > .main_part .footer .form > * {
+  margin: 10px;
+  border-bottom: 3px solid #198754;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  caret-color: #198754;
+}
+#main > .main_part .footer .form > input {
+  width: 850px;
+  outline: none;
+  background-color: transparent;
+}
+#main > .main_part .footer .form textarea {
+  width: 900px;
+  height: 100px;
+  background-color: transparent;
+  outline: none;
+}
+#main > .main_part .footer .form > button {
+  height: 30px;
+  width: 250px;
+  background-color: #198754;
+  border: 2px solid #198754;
+}
+#main > .main_part .footer .form > button:hover {
+  background-color: black;
+  border: 3px solid #198754;
+  color: #198754;
+}
+
+.menu {
+  width: 100% !important;
+}
+
+.dn {
+  display: none !important;
+}
+
+.df {
+  display: flex !important;
+}/*# sourceMappingURL=master.css.map */
